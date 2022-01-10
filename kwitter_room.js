@@ -30,7 +30,7 @@ function getData() {
                   Room_names = childKey;
                   console.log(Room_names);
                   //Start code
-                 row="<div class='room_name' id=" + Room_names + "onclick='redirectToRoomName(this.id)' > #" + Room_names + "</div> <hr>";
+                 row="<div class='room_name' id=" + Room_names + " onclick='redirectToRoomName(this.id)' > #" + Room_names + "</div> <hr>";
                  document.getElementById("output").innerHTML += row; 
                   //End code
             });
@@ -51,3 +51,4 @@ function logout() {
       localStorage.removeItem("room_name");
 window.location = "index.html";
 }
+
